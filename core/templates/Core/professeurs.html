@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Professeurs</title>
+        </head>
+    <body>
+        <h1>Voici nos professeurs</h1>
+        <ul>
+            {% for professeur in professeurs %}
+                <li>
+                    <strong>{{ professeur.nom }}</strong> - {{ professeur.matiere }} - {{ professeur.tarif }} FCFA
+                </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
